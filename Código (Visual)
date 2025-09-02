@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Promedio_Final
+{
+    internal class Program
+    {
+        private static object promedioFinal;
+
+        static void Main(string[] args)
+        {
+            double nota1, nota2, nota3;
+            double peso1,peso2, peso3;
+            double notaPonderada1, notaPonderada2, notaPonderada3;
+            double PromedioFinal;
+            String linea;
+
+            //ENTRADA DE NOTAS
+            Console.Write("\nNota 1: ");
+            linea = Console.ReadLine();
+            nota1 = double.Parse(linea);
+
+            Console.Write("\nNota 2: ");
+            linea = Console.ReadLine();
+            nota2 = double.Parse(linea);
+
+            Console.Write("\nNota 3: ");
+            linea = Console.ReadLine();
+            nota3 = double.Parse(linea);
+
+            //ENTRADA DE PESOS
+            Console.Write("\nPeso de Nota 1 (%): ");
+            linea = Console.ReadLine();
+            peso1 = double.Parse(linea);
+
+            Console.Write("\nPeso de Nota 2 (%): ");
+            linea = Console.ReadLine();
+            peso2 = double.Parse(linea);
+
+            Console.Write("\nPeso de Nota 3 (%): ");
+            linea = Console.ReadLine();
+            peso3 = double.Parse(linea);
+
+            //CALCULO
+            notaPonderada1 = nota1 * (peso1 / 100);
+            notaPonderada2 = nota2 * (peso2 / 100);
+            notaPonderada3 = nota3 * (peso3 / 100);
+            PromedioFinal = notaPonderada1 + notaPonderada2 + notaPonderada3;
+
+            //PROMEDIO FINAL
+            Console.WriteLine("\nEl promedio final del estudiante es: " + PromedioFinal);
+
+            //PAUSAR ANTES DE SALIR
+            Console.WriteLine("\nPresiona cualquier tecla para salir...");
+            Console.ReadKey();
+
+        }
+    }
+}
