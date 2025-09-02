@@ -1,0 +1,11 @@
+1.-Inicio 
+2.- Leer nota 1 , VERIFICAR PESO 
+3.- Leer nota 2, VERIFICAR PESO 
+3.- Leer nota 3, VERIFICAR PESO
+4.-Verificar que la suma de los pesos sea 100% 
+5.-SI NO = mostrar "error = los pesos deben sumar 100%"
+6.- SI SI = calcular el promedio notaPonderada1 = nota1 * (peso1 / 100) , 
+notaPonderada2 = nota2 * (peso2 / 100),
+notaPonderada3 = nota3 * (peso3 / 100) 
+7.- Mostrar promedio
+8.- Fin 
