@@ -1,18 +1,28 @@
 Algoritmo promediodenotas
+
 	Definir n1,n2,n3 Como Entero;
-	Definir p1,p2,p3,pf Como Real
+	Definir p1,p2,p3,pf Como Real;
+	Definir NP1, NP2, NP3, Como Formula;
+	Definir PromedioFinal;
+	
 	Escribir "Ingrese la primnera nota obtenida:";
 	Leer n1;
 	Escribir "Ingrese la segunda nota obtenida: ";
 	Leer n2;
 	Escribir "Ingresa la tercera nota obtenida: ";
 	leer n3;
-	p1 = n1 * 0.2;
-	p2 = n2 * 0.4;
-	p3 = n3 * 0.4;
-	pf = p1 + p2 + p3;
-	Escribir "La nota final es:",pf;
-	
-	
+
+	Escribir "Ingrese el primer peso obtenido:";
+	Leer p1;
+	Escribir "Ingrese el segundo peso obtenido: ";
+	Leer p2;
+	Escribir "Ingresa el tercer peso obtenido: ";
+	leer p3;
+
+	NP1 = n1 * (p1/100);
+	NP2 = n2 * (p2/100);
+	NP3 = n3 * (p3/100);
+	PromedioFinal = NP1 + NP2 + NP3;
+	Escribir "El promedio final del estudiante es:";
 	
 FinAlgoritmo
