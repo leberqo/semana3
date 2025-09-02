@@ -1,0 +1,18 @@
+Algoritmo promediodenotas
+	Definir n1,n2,n3 Como Entero;
+	Definir p1,p2,p3,pf Como Real
+	Escribir "Ingrese la primnera nota obtenida:";
+	Leer n1;
+	Escribir "Ingrese la segunda nota obtenida: ";
+	Leer n2;
+	Escribir "Ingresa la tercera nota obtenida: ";
+	leer n3;
+	p1 = n1 * 0.2;
+	p2 = n2 * 0.4;
+	p3 = n3 * 0.4;
+	pf = p1 + p2 + p3;
+	Escribir "La nota final es:",pf;
+	
+	
+	
+FinAlgoritmo
